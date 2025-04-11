@@ -1,0 +1,132 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    color: #ff4c60;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  /* Search Bar */
+  .search-area {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #ff4c60;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6f80;
+  }
+  
+  select {
+    padding: 12px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  /* Movie Cards */
+  .movieResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .movie {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  .movie:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .movie h3 {
+    margin: 5px 0;
+  }
+  
+  .movie p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 8px;
+  }
+  
+  .movie .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .movie .actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #ff4c60;
+    border-radius: 8px;
+  }
+  
+  .movie .fav {
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff4c60;
+    user-select: none;
+  }
+  
+  .movie .fav.saved {
+    color: #ffd700;
+  }
+  

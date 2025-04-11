@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindFlix 🎬 Movie Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>🎬 MindFlix</h1>
+    <p>Discover movies that match your mood ✨</p>
+  </div>
+
+  <div class="search-area">
+    <input type="text" id="moodInput" placeholder="e.g. I feel adventurous or I want a Tamil comedy">
+    <button onclick="searchMovies()">Suggest</button>
+
+    <select id="ratingFilter" onchange="applyFilter()">
+      <option value="">All Ratings</option>
+      <option value="8">⭐ 8.0+</option>
+      <option value="7">⭐ 7.0+</option>
+      <option value="6">⭐ 6.0+</option>
+    </select>
+  </div>
+
+  <div class="movieResults" id="movieResults"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
